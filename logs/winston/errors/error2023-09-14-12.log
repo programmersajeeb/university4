@@ -1,0 +1,12 @@
+{
+  message: 'Failed to connect the database',
+  level: 'error',
+  label: 'right meow!',
+  timestamp: '2023-09-14T06:02:49.693Z'
+}
+{
+  message: 'Failed to connect the database',
+  level: 'error',
+  label: 'right meow!',
+  timestamp: '2023-09-14T06:02:58.142Z'
+}
