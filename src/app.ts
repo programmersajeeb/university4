@@ -12,10 +12,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/v1/users', userRouter);
 
 // testing
-/* app.get('/', (req: Request, res: Response, next: NextFunction) => {
-  throw new ApiError(400, 'neo error khaoa shuru');
-  next('ore abar error');
-}); */
+// app.get('/', async (req: Request, res: Response, next: NextFunction) => {
+//   throw new Error('testing error logger');
+// });
 
 // global error handler
 app.use(globalErrorHandler);
