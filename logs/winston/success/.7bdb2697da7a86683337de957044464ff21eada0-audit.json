@@ -1,15 +1,35 @@
 {
-  "keep": {
-    "days": true,
-    "amount": 14
-  },
-  "auditLog": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\.7bdb2697da7a86683337de957044464ff21eada0-audit.json",
-  "files": [
-    {
-      "date": 1695380186210,
-      "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-09-22-16.log",
-      "hash": "978efd13b18bbf2bafc84841c6c7c036ba19c7503e9b9fb18bf7b0b110922fe2"
-    }
-  ],
-  "hashType": "sha256"
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\.7bdb2697da7a86683337de957044464ff21eada0-audit.json",
+    "files": [
+        {
+            "date": 1695380186210,
+            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-09-22-16.log",
+            "hash": "978efd13b18bbf2bafc84841c6c7c036ba19c7503e9b9fb18bf7b0b110922fe2"
+        },
+        {
+            "date": 1695456324589,
+            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-09-23-14.log",
+            "hash": "c034548dfde2c20d47410e48150c85c356919de7a25839c6a765e36b56a0de33"
+        },
+        {
+            "date": 1695546180704,
+            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-09-24-15.log",
+            "hash": "755bfd292408bc61c908ef89639f752619a0c8f16fade242fa89fe43cdb66bfc"
+        },
+        {
+            "date": 1695553763996,
+            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-09-24-17.log",
+            "hash": "f5c33dbd218f93a5b1c406605415c2eda3a348665d67a09eb3c341a39bb19f05"
+        },
+        {
+            "date": 1695557663397,
+            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-09-24-18.log",
+            "hash": "7cca95f8ccd8e3a474f24440f3f3421d852168f1d36a69aa959b473b57f54ae5"
+        }
+    ],
+    "hashType": "sha256"
 }
