@@ -1,35 +1,35 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\errors\\.ca61659515a221239d59412ef20e08894434cbe1-audit.json",
+  "files": [
+    {
+      "date": 1695380186222,
+      "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\errors\\error-2023-09-22-16.log",
+      "hash": "213fcafb4f797d9bbc376b192e509a87232db199cb27eae55b082378291ceb64"
     },
-    "auditLog": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\errors\\.ca61659515a221239d59412ef20e08894434cbe1-audit.json",
-    "files": [
-        {
-            "date": 1695380186222,
-            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\errors\\error-2023-09-22-16.log",
-            "hash": "213fcafb4f797d9bbc376b192e509a87232db199cb27eae55b082378291ceb64"
-        },
-        {
-            "date": 1695456324634,
-            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\errors\\error-2023-09-23-14.log",
-            "hash": "dec22dd74f60a32b0706c7ea0570f7cc3f5a873aaa808b0606199b8bcce852a6"
-        },
-        {
-            "date": 1695546180818,
-            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\errors\\error-2023-09-24-15.log",
-            "hash": "8448eea2101b606cb0c4682e7d201b7fbaca5bae56ea23dfd604e7e20e1ae9cb"
-        },
-        {
-            "date": 1695553764041,
-            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\errors\\error-2023-09-24-17.log",
-            "hash": "9ab270ecfaffda2714aebd648c34817164c2657bbb18c5c323333ee3ece29bce"
-        },
-        {
-            "date": 1695557663453,
-            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\errors\\error-2023-09-24-18.log",
-            "hash": "341206e538fc0a36fdf8c0f0e215ae08c300d0c4cd72ea1df402747b4509095b"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1695456324634,
+      "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\errors\\error-2023-09-23-14.log",
+      "hash": "dec22dd74f60a32b0706c7ea0570f7cc3f5a873aaa808b0606199b8bcce852a6"
+    },
+    {
+      "date": 1695546180818,
+      "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\errors\\error-2023-09-24-15.log",
+      "hash": "8448eea2101b606cb0c4682e7d201b7fbaca5bae56ea23dfd604e7e20e1ae9cb"
+    },
+    {
+      "date": 1695553764041,
+      "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\errors\\error-2023-09-24-17.log",
+      "hash": "9ab270ecfaffda2714aebd648c34817164c2657bbb18c5c323333ee3ece29bce"
+    },
+    {
+      "date": 1695557663453,
+      "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\errors\\error-2023-09-24-18.log",
+      "hash": "341206e538fc0a36fdf8c0f0e215ae08c300d0c4cd72ea1df402747b4509095b"
+    }
+  ],
+  "hashType": "sha256"
 }
