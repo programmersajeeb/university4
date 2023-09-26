@@ -1,25 +1,25 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\.7bdb2697da7a86683337de957044464ff21eada0-audit.json",
+  "files": [
+    {
+      "date": 1695702462678,
+      "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-09-26-10.log",
+      "hash": "66f4b68e6595f0d19db6138c2b4bed429604dfcc50274b2a6d2f2bdf62e73999"
     },
-    "auditLog": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\.7bdb2697da7a86683337de957044464ff21eada0-audit.json",
-    "files": [
-        {
-            "date": 1695702462678,
-            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-09-26-10.log",
-            "hash": "66f4b68e6595f0d19db6138c2b4bed429604dfcc50274b2a6d2f2bdf62e73999"
-        },
-        {
-            "date": 1695707771734,
-            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-09-26-11.log",
-            "hash": "0e5c7b9d1beeaca9ac144cdc5b72c6c9a5b736c5c79a15b1fe795529349f2f72"
-        },
-        {
-            "date": 1695726668688,
-            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-09-26-17.log",
-            "hash": "ef87e9af6f4fe11a22b767889d8f4c0584d95cdf5352afabc96d1161ca4ecf27"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1695707771734,
+      "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-09-26-11.log",
+      "hash": "0e5c7b9d1beeaca9ac144cdc5b72c6c9a5b736c5c79a15b1fe795529349f2f72"
+    },
+    {
+      "date": 1695726668688,
+      "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-09-26-17.log",
+      "hash": "ef87e9af6f4fe11a22b767889d8f4c0584d95cdf5352afabc96d1161ca4ecf27"
+    }
+  ],
+  "hashType": "sha256"
 }
