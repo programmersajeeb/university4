@@ -43,6 +43,7 @@ const AcademicSemesterSchema = new Schema<IAcademicSemester>(
   },
 );
 
+// duplicate entry code
 AcademicSemesterSchema.pre('save', async function (next) {
   const isExist = await academicSemester.findOne({
     title: this.title,

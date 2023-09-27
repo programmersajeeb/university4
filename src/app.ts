@@ -1,7 +1,6 @@
 import express, { Application } from 'express';
 import globalErrorHandler from './app/middleweres/globalErrorHandler';
-import { userRouter } from './app/modules/user/user.route';
-import { academicSemesterRoutes } from './app/modules/academicSemester/academicSemester.route';
+import router from './app/router';
 // import ApiError from './errors/ApiError';
 const app: Application = express();
 
@@ -10,8 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // api routes
-app.use('/api/v1/users', userRouter);
-app.use('/api/v1/create-semester', academicSemesterRoutes);
+app.use('/api/v1', router);
 
 // testing
 // app.get('/', async (req: Request, res: Response, next: NextFunction) => {
