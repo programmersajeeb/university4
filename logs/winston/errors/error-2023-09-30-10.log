@@ -1,0 +1,49 @@
+{
+  stringValue: '"i"',
+  messageFormat: undefined,
+  kind: 'number',
+  value: 'i',
+  path: 'year',
+  reason: null,
+  valueType: 'string',
+  model: Model { academicSemester },
+  level: 'error',
+  label: 'right meow!',
+  timestamp: '2023-09-30T04:26:10.893Z'
+}
+{
+  statusCode: 400,
+  level: 'error',
+  label: 'right meow!',
+  timestamp: '2023-09-30T04:32:23.713Z'
+}
+{
+  statusCode: 400,
+  level: 'error',
+  label: 'right meow!',
+  timestamp: '2023-09-30T04:32:50.590Z'
+}
+{
+  statusCode: 400,
+  level: 'error',
+  label: 'right meow!',
+  timestamp: '2023-09-30T04:33:14.080Z'
+}
+{
+  statusCode: 409,
+  level: 'error',
+  label: 'right meow!',
+  timestamp: '2023-09-30T04:34:14.640Z'
+}
+{
+  statusCode: 409,
+  level: 'error',
+  label: 'right meow!',
+  timestamp: '2023-09-30T04:34:41.121Z'
+}
+{
+  statusCode: 409,
+  level: 'error',
+  label: 'right meow!',
+  timestamp: '2023-09-30T04:36:49.651Z'
+}

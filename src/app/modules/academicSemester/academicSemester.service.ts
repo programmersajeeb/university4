@@ -4,7 +4,10 @@ import { paginationHelper } from '../../../helpers/paginationHelpers';
 import { IGenericResponse } from '../../../interfaces/common';
 import { IPaginationOptions } from '../../../interfaces/pagination';
 import { academicSemesterCodeMapper } from './academicSemester.const';
-import { IAcademicSemester } from './academicSemester.interface';
+import {
+  IAcademicSemester,
+  IAcademicSemesterFilters,
+} from './academicSemester.interface';
 import { academicSemester } from './academicSemester.model';
 import httpStatus from 'http-status';
 
@@ -21,8 +24,26 @@ const createSemester = async (
 };
 
 const getAllSemesters = async (
+  filters: IAcademicSemesterFilters,
   paginationOptions: IPaginationOptions,
 ): Promise<IGenericResponse<IAcademicSemester[]>> => {
+  const { searchTearm } = filters;
+
+  const academicSemesterSearchableFields = ['title', 'year', 'code'];
+
+  const andCondition = [];
+
+  if (searchTearm) {
+    andCondition.push({
+      $or: academicSemesterSearchableFields.map(field => ({
+        [field]: {
+          $regex: searchTearm,
+          $options: 'i',
+        },
+      })),
+    });
+  }
+
   const { page, limit, skip, sortBy, sortOrder } =
     paginationHelper.calculateHelper(paginationOptions);
 
@@ -33,7 +54,7 @@ const getAllSemesters = async (
   }
 
   const result = await academicSemester
-    .find()
+    .find({ $and: andCondition })
     .sort(sortCondition)
     .skip(skip)
     .limit(limit);
