@@ -29,5 +29,5 @@ export type IAcademicSemester = {
 export type academicSemesterModel = Model<IAcademicSemester>;
 
 export type IAcademicSemesterFilters = {
-  searchTearm: string;
+  searchTerm?: string;
 };

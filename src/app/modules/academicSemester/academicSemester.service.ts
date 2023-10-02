@@ -3,7 +3,10 @@ import ApiError from '../../../errors/ApiError';
 import { paginationHelper } from '../../../helpers/paginationHelpers';
 import { IGenericResponse } from '../../../interfaces/common';
 import { IPaginationOptions } from '../../../interfaces/pagination';
-import { academicSemesterCodeMapper } from './academicSemester.const';
+import {
+  academicSemesterCodeMapper,
+  academicSemesterSearchableFields,
+} from './academicSemester.const';
 import {
   IAcademicSemester,
   IAcademicSemesterFilters,
@@ -27,22 +30,32 @@ const getAllSemesters = async (
   filters: IAcademicSemesterFilters,
   paginationOptions: IPaginationOptions,
 ): Promise<IGenericResponse<IAcademicSemester[]>> => {
-  const { searchTearm } = filters;
-
-  const academicSemesterSearchableFields = ['title', 'year', 'code'];
+  const { searchTerm, ...filtersData } = filters;
 
   const andCondition = [];
 
-  if (searchTearm) {
+  // partial filter data
+  if (searchTerm) {
     andCondition.push({
       $or: academicSemesterSearchableFields.map(field => ({
         [field]: {
-          $regex: searchTearm,
+          $regex: searchTerm,
           $options: 'i',
         },
       })),
     });
   }
+
+  // filter data
+  if (Object.keys(filtersData).length) {
+    andCondition.push({
+      $and: Object.entries(filtersData).map(([field, value]) => ({
+        [field]: value,
+      })),
+    });
+  }
+
+  const whereCondition = andCondition.length > 0 ? { $and: andCondition } : {};
 
   const { page, limit, skip, sortBy, sortOrder } =
     paginationHelper.calculateHelper(paginationOptions);
@@ -54,7 +67,7 @@ const getAllSemesters = async (
   }
 
   const result = await academicSemester
-    .find({ $and: andCondition })
+    .find(whereCondition)
     .sort(sortCondition)
     .skip(skip)
     .limit(limit);
@@ -70,7 +83,15 @@ const getAllSemesters = async (
   };
 };
 
+const getSingleSemester = async (
+  id: string,
+): Promise<IAcademicSemester | null> => {
+  const result = await academicSemester.findById(id);
+  return result;
+};
+
 export const academicSemesterService = {
   createSemester,
   getAllSemesters,
+  getSingleSemester,
 };

@@ -1,0 +1,35 @@
+{
+  statusCode: 409,
+  level: 'error',
+  label: 'right meow!',
+  timestamp: '2023-10-02T08:40:35.915Z'
+}
+{
+  statusCode: 409,
+  level: 'error',
+  label: 'right meow!',
+  timestamp: '2023-10-02T08:42:38.278Z'
+}
+{
+  statusCode: 409,
+  level: 'error',
+  label: 'right meow!',
+  timestamp: '2023-10-02T08:43:28.237Z'
+}
+{
+  ok: 0,
+  code: 2,
+  codeName: 'BadValue',
+  '$clusterTime': {
+    clusterTime: new Timestamp({ t: 1696236563, i: 1 }),
+    signature: {
+      hash: Binary.createFromBase64("QFKQAjS11+J7+G1wQA6qCR7d0rU=", 0),
+      keyId: new Long("7254888525374423045")
+    }
+  },
+  operationTime: new Timestamp({ t: 1696236563, i: 1 }),
+  level: 'error',
+  label: 'right meow!',
+  timestamp: '2023-10-02T08:49:49.281Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
