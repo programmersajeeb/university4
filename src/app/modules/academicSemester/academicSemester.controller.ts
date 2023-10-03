@@ -8,22 +8,20 @@ import pick from '../../../shared/pick';
 import { paginationFields } from '../../../constants/paginationFields';
 import { filterableField } from './academicSemester.const';
 
-const createSemester = catchAsync(
-  async (req: Request, res: Response, next: NextFunction) => {
-    const { ...academicSemesterData } = req.body;
-    const result =
-      await academicSemesterService.createSemester(academicSemesterData);
+const createSemester = catchAsync(async (req: Request, res: Response) => {
+  const { ...academicSemesterData } = req.body;
+  const result =
+    await academicSemesterService.createSemester(academicSemesterData);
 
-    sendResponse<IAcademicSemester>(res, {
-      statusCode: httpStatus.OK,
-      success: true,
-      message: 'Academic semester is created successfully',
-      data: result,
-    });
-
-    next();
-  },
-);
+  sendResponse<IAcademicSemester>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Academic semester is created successfully',
+    data: result,
+  });
+  // এখান থেকে সরিয়ে ফেলা হয়েছে  এরর আসছিল জন্যে
+  // next();
+});
 
 const getAllSemesters = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
