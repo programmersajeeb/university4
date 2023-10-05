@@ -9,6 +9,7 @@ import { ZodError } from 'zod';
 import handleZodError from '../../errors/handleZodError';
 import handleCastError from '../../errors/handleCastError';
 
+// eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
 const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
   // logger setup
   config.env === 'development'
@@ -63,8 +64,6 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
     errorMessage,
     stack: config.env !== 'production' ? error.stack : undefined,
   });
-  // এইখানে next() কল করার কারনে Cannot set headers after they are sent to the client এরর দেখাচ্ছে টার্মিনালে
-  next();
 };
 
 export default globalErrorHandler;
