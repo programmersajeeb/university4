@@ -73,7 +73,7 @@ const deleteSemester = catchAsync(async (req: Request, res: Response) => {
 
   const result = await academicSemesterService.deleteSemester(id);
 
-  sendResponse(res, {
+  sendResponse<IAcademicSemester | null>(res, {
     statusCode: httpStatus.OK,
     success: true,
     message: 'Academic semester deleted successfully',
