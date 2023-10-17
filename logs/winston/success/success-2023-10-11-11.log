@@ -2,143 +2,131 @@
   message: 'Database connect successfully',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:25:38.290Z'
+  timestamp: '2023-10-11T05:15:09.333Z'
 }
 {
   message: 'Example app listening on port 5000',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:25:38.322Z'
+  timestamp: '2023-10-11T05:15:09.785Z'
 }
 {
   message: 'Database connect successfully',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:27:03.480Z'
+  timestamp: '2023-10-11T05:24:34.798Z'
 }
 {
   message: 'Example app listening on port 5000',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:27:03.499Z'
+  timestamp: '2023-10-11T05:24:34.824Z'
 }
 {
   message: 'Database connect successfully',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:28:44.886Z'
+  timestamp: '2023-10-11T05:26:27.030Z'
 }
 {
   message: 'Example app listening on port 5000',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:28:44.899Z'
+  timestamp: '2023-10-11T05:26:27.050Z'
 }
 {
   message: 'Database connect successfully',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:31:37.660Z'
+  timestamp: '2023-10-11T05:27:06.180Z'
 }
 {
   message: 'Example app listening on port 5000',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:31:37.681Z'
+  timestamp: '2023-10-11T05:27:06.217Z'
 }
 {
   message: 'Database connect successfully',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:32:37.581Z'
+  timestamp: '2023-10-11T05:29:16.887Z'
 }
 {
   message: 'Example app listening on port 5000',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:32:37.605Z'
+  timestamp: '2023-10-11T05:29:16.915Z'
 }
 {
   message: 'Database connect successfully',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:33:01.306Z'
+  timestamp: '2023-10-11T05:41:46.007Z'
 }
 {
   message: 'Example app listening on port 5000',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:33:01.322Z'
+  timestamp: '2023-10-11T05:41:46.044Z'
 }
 {
   message: 'Database connect successfully',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:33:30.043Z'
+  timestamp: '2023-10-11T05:45:23.511Z'
 }
 {
   message: 'Example app listening on port 5000',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:33:30.055Z'
+  timestamp: '2023-10-11T05:45:23.545Z'
 }
 {
   message: 'Database connect successfully',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:34:28.931Z'
+  timestamp: '2023-10-11T05:45:33.662Z'
 }
 {
   message: 'Example app listening on port 5000',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:34:28.951Z'
+  timestamp: '2023-10-11T05:45:33.679Z'
 }
 {
   message: 'Database connect successfully',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:35:09.015Z'
+  timestamp: '2023-10-11T05:48:23.803Z'
 }
 {
   message: 'Example app listening on port 5000',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:35:09.048Z'
+  timestamp: '2023-10-11T05:48:23.837Z'
 }
 {
   message: 'Database connect successfully',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:36:37.843Z'
+  timestamp: '2023-10-11T05:49:34.085Z'
 }
 {
   message: 'Example app listening on port 5000',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:36:37.861Z'
+  timestamp: '2023-10-11T05:49:34.118Z'
 }
 {
   message: 'Database connect successfully',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:37:05.382Z'
+  timestamp: '2023-10-11T05:51:37.772Z'
 }
 {
   message: 'Example app listening on port 5000',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-09-30T04:37:05.418Z'
-}
-{
-  message: 'Database connect successfully',
-  level: 'info',
-  label: 'right meow!',
-  timestamp: '2023-09-30T04:43:38.808Z'
-}
-{
-  message: 'Example app listening on port 5000',
-  level: 'info',
-  label: 'right meow!',
-  timestamp: '2023-09-30T04:43:38.844Z'
+  timestamp: '2023-10-11T05:51:37.794Z'
 }

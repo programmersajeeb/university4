@@ -69,7 +69,7 @@ const updateSemester = catchAsync(async (req: Request, res: Response) => {
 });
 
 const deleteSemester = catchAsync(async (req: Request, res: Response) => {
-  const id = req.params.body;
+  const id = req.params.id;
 
   const result = await academicSemesterService.deleteSemester(id);
 

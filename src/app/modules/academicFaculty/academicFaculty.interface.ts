@@ -6,3 +6,7 @@ export type IAcademicFaculty = {
 
 export type FacultyModel = Model<IAcademicFaculty, Record<string, unknown>>;
 // number changed by unknown
+
+export type IAcademicFacultyFilters = {
+  searchTerm?: string;
+};
