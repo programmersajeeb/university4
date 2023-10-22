@@ -17,5 +17,6 @@ router.patch(
   validateRequest(academicDepartmentvalidation.updateDepartmentZodSchema),
   departmentController.updateDepartment,
 );
+router.get('/', departmentController.getAllDepartment);
 
 export const academicDepartmentRoutes = router;

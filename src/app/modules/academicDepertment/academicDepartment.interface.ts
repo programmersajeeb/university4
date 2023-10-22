@@ -10,3 +10,8 @@ export type AcademicDepertmentModel = Model<
   IAcademicDepertment,
   Record<string, unknown>
 >;
+
+export type IAcademicDepertmentFilter = {
+  searchTerm?: string;
+  academicFaculty?: Types.ObjectId;
+};

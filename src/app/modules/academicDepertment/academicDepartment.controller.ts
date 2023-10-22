@@ -4,6 +4,11 @@ import sendResponse from '../../../shared/sendResponse';
 import httpStatus from 'http-status';
 import { departmentService } from './academicDepartment.service';
 import { IAcademicDepertment } from './academicDepartment.interface';
+import pick from '../../../shared/pick';
+import {
+  departmentFilterableField,
+  departmentSearchableField,
+} from './academicDepartment.constant';
 
 const createAcademicDepartment = catchAsync(
   async (req: Request, res: Response) => {
@@ -57,9 +62,25 @@ const updateDepartment = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const getAllDepartment = catchAsync(async (req: Request, res: Response) => {
+  const filters = pick(req.query, departmentFilterableField);
+  const pagination = pick(req.query, departmentSearchableField);
+
+  const result = await departmentService.getAllDepartment(filters, pagination);
+
+  sendResponse<IAcademicDepertment[]>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Get all academic department',
+    meta: result.meta,
+    data: result.data,
+  });
+});
+
 export const departmentController = {
   createAcademicDepartment,
   getSingleDepartment,
   deleteDepartment,
   updateDepartment,
+  getAllDepartment,
 };
