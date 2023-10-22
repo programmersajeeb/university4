@@ -5,10 +5,8 @@ import httpStatus from 'http-status';
 import { departmentService } from './academicDepartment.service';
 import { IAcademicDepertment } from './academicDepartment.interface';
 import pick from '../../../shared/pick';
-import {
-  departmentFilterableField,
-  departmentSearchableField,
-} from './academicDepartment.constant';
+import { departmentFilterableField } from './academicDepartment.constant';
+import { paginationFields } from '../../../constants/paginationFields';
 
 const createAcademicDepartment = catchAsync(
   async (req: Request, res: Response) => {
@@ -64,7 +62,7 @@ const updateDepartment = catchAsync(async (req: Request, res: Response) => {
 
 const getAllDepartment = catchAsync(async (req: Request, res: Response) => {
   const filters = pick(req.query, departmentFilterableField);
-  const pagination = pick(req.query, departmentSearchableField);
+  const pagination = pick(req.query, paginationFields);
 
   const result = await departmentService.getAllDepartment(filters, pagination);
 

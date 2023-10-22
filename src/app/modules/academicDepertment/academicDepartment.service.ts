@@ -57,7 +57,7 @@ const getAllDepartment = async (
       $or: departmentSearchableField.map(field => ({
         [field]: {
           $reged: searchTerm,
-          $paginationOption: 'i',
+          $paginationOptions: 'i',
         },
       })),
     });
