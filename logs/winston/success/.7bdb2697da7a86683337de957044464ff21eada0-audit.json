@@ -1,25 +1,25 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\.7bdb2697da7a86683337de957044464ff21eada0-audit.json",
+  "files": [
+    {
+      "date": 1699163386026,
+      "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-11-05-11.log",
+      "hash": "361c1ace1ca5b5dda41abc4e739dd93311cb1a86c8d7c8f9d5eb9179828a328d"
     },
-    "auditLog": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\.7bdb2697da7a86683337de957044464ff21eada0-audit.json",
-    "files": [
-        {
-            "date": 1699163386026,
-            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-11-05-11.log",
-            "hash": "361c1ace1ca5b5dda41abc4e739dd93311cb1a86c8d7c8f9d5eb9179828a328d"
-        },
-        {
-            "date": 1699164371968,
-            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-11-05-12.log",
-            "hash": "19edb82020c7bee5bcc1d32d164ea57b763454109e59b18e18b5f102c8a9dc00"
-        },
-        {
-            "date": 1699337742270,
-            "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-11-07-12.log",
-            "hash": "cd63eff0ea40b9ffe6220024207ee29a0b6a7744ce0f82ed7ccefe049ef7d989"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1699164371968,
+      "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-11-05-12.log",
+      "hash": "19edb82020c7bee5bcc1d32d164ea57b763454109e59b18e18b5f102c8a9dc00"
+    },
+    {
+      "date": 1699337742270,
+      "name": "G:\\Complete-web-development-4\\LEVEL-2\\Mission3\\university4\\logs\\winston\\success\\success-2023-11-07-12.log",
+      "hash": "cd63eff0ea40b9ffe6220024207ee29a0b6a7744ce0f82ed7ccefe049ef7d989"
+    }
+  ],
+  "hashType": "sha256"
 }
