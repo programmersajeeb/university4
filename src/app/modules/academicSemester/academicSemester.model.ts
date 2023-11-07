@@ -45,7 +45,7 @@ const AcademicSemesterSchema = new Schema<IAcademicSemester>(
 
 // duplicate entry code
 AcademicSemesterSchema.pre('save', async function (next) {
-  const isExist = await academicSemester.findOne({
+  const isExist = await AcademicSemester.findOne({
     title: this.title,
     year: this.year,
   });
@@ -54,7 +54,7 @@ AcademicSemesterSchema.pre('save', async function (next) {
   } else next();
 });
 
-export const academicSemester = model<IAcademicSemester, academicSemesterModel>(
+export const AcademicSemester = model<IAcademicSemester, academicSemesterModel>(
   'academicSemester',
   AcademicSemesterSchema,
 );

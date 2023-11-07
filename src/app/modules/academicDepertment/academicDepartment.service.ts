@@ -56,8 +56,8 @@ const getAllDepartment = async (
     andCondition.push({
       $or: departmentSearchableField.map(field => ({
         [field]: {
-          $reged: searchTerm,
-          $paginationOptions: 'i',
+          $regex: searchTerm,
+          $options: 'i',
         },
       })),
     });

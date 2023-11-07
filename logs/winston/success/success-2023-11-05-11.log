@@ -2,23 +2,23 @@
   message: 'Database connect successfully',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-10-21T15:54:14.380Z'
+  timestamp: '2023-11-05T05:49:48.875Z'
 }
 {
   message: 'Example app listening on port 5000',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-10-21T15:54:14.400Z'
+  timestamp: '2023-11-05T05:49:48.924Z'
 }
 {
   message: 'Database connect successfully',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-10-21T15:58:51.515Z'
+  timestamp: '2023-11-05T05:59:55.628Z'
 }
 {
   message: 'Example app listening on port 5000',
   level: 'info',
   label: 'right meow!',
-  timestamp: '2023-10-21T15:58:51.550Z'
+  timestamp: '2023-11-05T05:59:55.654Z'
 }

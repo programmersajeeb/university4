@@ -11,7 +11,7 @@ import {
   IAcademicSemester,
   IAcademicSemesterFilters,
 } from './academicSemester.interface';
-import { academicSemester } from './academicSemester.model';
+import { AcademicSemester } from './academicSemester.model';
 import httpStatus from 'http-status';
 
 const createSemester = async (
@@ -22,7 +22,7 @@ const createSemester = async (
     throw new ApiError(httpStatus.BAD_REQUEST, 'Invalid semester code');
   }
   // মডেল কে কল দিতে হবে ডাটাবেজ একশন ঘটানোর জন্য
-  const result = await academicSemester.create(payload);
+  const result = await AcademicSemester.create(payload);
   return result;
 };
 
@@ -66,12 +66,11 @@ const getAllSemesters = async (
     sortCondition[sortBy] = sortOrder;
   }
 
-  const result = await academicSemester
-    .find(whereCondition)
+  const result = await AcademicSemester.find(whereCondition)
     .sort(sortCondition)
     .skip(skip)
     .limit(limit);
-  const total = await academicSemester.countDocuments();
+  const total = await AcademicSemester.countDocuments();
 
   return {
     meta: {
@@ -86,7 +85,7 @@ const getAllSemesters = async (
 const getSingleSemester = async (
   id: string,
 ): Promise<IAcademicSemester | null> => {
-  const result = await academicSemester.findById(id);
+  const result = await AcademicSemester.findById(id);
   return result;
 };
 
@@ -101,7 +100,7 @@ const updateSemester = async (
   ) {
     throw new ApiError(httpStatus.BAD_REQUEST, 'Invalid semester code');
   }
-  const result = await academicSemester.findOneAndUpdate({ _id: id }, payload, {
+  const result = await AcademicSemester.findOneAndUpdate({ _id: id }, payload, {
     new: true,
   });
   return result;
@@ -110,7 +109,7 @@ const updateSemester = async (
 const deleteSemester = async (
   id: string,
 ): Promise<IAcademicSemester | null> => {
-  const result = await academicSemester.findByIdAndDelete(id);
+  const result = await AcademicSemester.findByIdAndDelete(id);
   return result;
 };
 
